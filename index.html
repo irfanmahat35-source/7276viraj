@@ -17,11 +17,11 @@
         /* Image B&W to Color Effect */
         .cinematic-img {
             filter: grayscale(100%);
-            transition: filter 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;
+            transition: filter 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease;
         }
         .cinematic-img:hover {
             filter: grayscale(0%);
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
 
         .glass-nav { background: rgba(0,0,0,0.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
@@ -50,21 +50,22 @@
     <nav class="fixed top-0 w-full z-[100] px-8 py-5 flex justify-between items-center glass-nav">
         <div class="text-xl font-black italic tracking-tighter uppercase">CINEMATIC<span class="text-[#c5a059]">KAR.</span></div>
         <div class="hidden md:flex gap-8 text-[10px] uppercase font-bold tracking-widest opacity-60">
-            <a href="#showreel" class="hover:text-[#c5a059] transition">Showreel</a>
-            <a href="#about" class="hover:text-[#c5a059] transition">About</a>
-            <a href="#cinematography" class="hover:text-[#c5a059] transition">Visuals</a>
-            <a href="#motion" class="hover:text-[#c5a059] transition">Motion</a>
-            <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
+            <a href="#showreel" class="hover:text-[#c5a059] transition font-bold">Showreel</a>
+            <a href="#about" class="hover:text-[#c5a059] transition font-bold">About</a>
+            <a href="#cinematography" class="hover:text-[#c5a059] transition font-bold">Visuals</a>
+            <a href="#motion" class="hover:text-[#c5a059] transition font-bold">Motion</a>
+            <a href="#contact" class="hover:text-[#c5a059] transition font-bold">Contact</a>
         </div>
     </nav>
 
-    <section class="pt-32 pb-12 flex flex-col justify-center items-center text-center px-6">
+    <section class="pt-40 pb-12 flex flex-col justify-center items-center text-center px-6">
         <div data-aos="fade-up">
             <h1 class="cinematic-header text-[16vw] md:text-[10vw] mb-4">VIRAJ</h1>
-            <p class="text-[9px] md:text-xs tracking-[1.2em] uppercase text-zinc-500 font-bold mb-8 italic">Visual Storyteller • Cinematographer</p>
+            <p class="text-[9px] md:text-xs tracking-[1.2em] uppercase text-zinc-500 font-bold mb-10 italic">Visual Storyteller • Cinematographer</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="https://www.instagram.com/vp__cinematics?igsh=MTRqaGl1ZGN6Mm4yYQ==" target="_blank" class="px-8 py-3 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[#c5a059] transition duration-500">Instagram</a>
-                <a href="mailto:virajpotale8873@gmail.com" class="px-8 py-3 border border-white/20 text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-white/10 transition">Email Me</a>
+                <a href="https://drive.google.com/file/d/1k56Nxg1S11yjCpGrt2LvIqB38TE4m7Sx/view?usp=sharing" target="_blank" class="px-8 py-3 border border-[#c5a059] text-[#c5a059] text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[#c5a059] hover:text-black transition duration-500">Download CV</a>
+                <a href="mailto:virajpotale8873@gmail.com" class="px-8 py-3 border border-white/20 text-white text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-white/10 transition font-bold">Email Me</a>
             </div>
         </div>
     </section>
@@ -116,24 +117,24 @@
             <span class="section-title" data-aos="fade-up">Technical Arsenal</span>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="grid grid-cols-2 gap-4" data-aos="fade-right">
-                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-8 h-8 mx-auto mb-3">
+                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059] group">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-8 h-8 mx-auto mb-3 group-hover:scale-110 transition">
                         <p class="text-[9px] font-bold uppercase tracking-widest">Premiere Pro</p>
                     </div>
-                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-8 h-8 mx-auto mb-3">
+                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059] group">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-8 h-8 mx-auto mb-3 group-hover:scale-110 transition">
                         <p class="text-[9px] font-bold uppercase tracking-widest">After Effects</p>
                     </div>
-                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059]">
-                        <img src="https://www.blackmagicdesign.com/images/products/davinciresolve/icons/resolve-icon.png" class="w-8 h-8 mx-auto mb-3">
+                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059] group">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/DaVinci_Resolve_Studio_icon.png" class="w-8 h-8 mx-auto mb-3 group-hover:scale-110 transition">
                         <p class="text-[9px] font-bold uppercase tracking-widest">DaVinci Resolve</p>
                     </div>
-                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059]">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="w-8 h-8 mx-auto mb-3">
+                    <div class="p-5 bg-white/5 rounded-lg border border-white/5 text-center transition hover:border-[#c5a059] group">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="w-8 h-8 mx-auto mb-3 group-hover:scale-110 transition">
                         <p class="text-[9px] font-bold uppercase tracking-widest">Photoshop</p>
                     </div>
                 </div>
-                <div class="flex flex-wrap gap-3" data-aos="fade-left">
+                <div class="flex flex-wrap gap-3 justify-center md:justify-start" data-aos="fade-left">
                     <span class="skill-badge">Cinematography</span>
                     <span class="skill-badge">Color Grading</span>
                     <span class="skill-badge">Film Direction</span>
@@ -162,11 +163,11 @@
 
     <section id="motion" class="py-16 px-6">
         <span class="section-title" data-aos="fade-up">Motion Graphics</span>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 items-center">
              <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe>
             </div>
-            <div class="video-container aspect-video self-center" data-aos="fade-left">
+            <div class="video-container aspect-video" data-aos="fade-left">
                 <iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe>
             </div>
         </div>
@@ -187,21 +188,24 @@
         <div data-aos="zoom-in">
             <h2 class="cinematic-header text-6xl md:text-8xl mb-6 italic">LET'S SHOOT</h2>
             <p class="text-[#c5a059] tracking-[0.5em] uppercase font-bold mb-12 italic">Available for projects worldwide</p>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 text-center">
                 <a href="https://www.instagram.com/vp__cinematics?igsh=MTRqaGl1ZGN6Mm4yYQ==" target="_blank" class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition group">
                     <p class="text-[10px] text-zinc-500 uppercase tracking-widest mb-2">Instagram</p>
                     <p class="text-xl font-bold group-hover:text-[#c5a059]">@vp__cinematics</p>
                 </a>
-                <div class="p-8 border border-white/10 rounded-2xl text-center">
+                <div class="p-8 border border-white/10 rounded-2xl">
                     <p class="text-[10px] text-zinc-500 uppercase tracking-widest mb-2">Direct Contact</p>
                     <p class="text-xl font-bold italic mb-1">+91 7276108873</p>
-                    <p class="text-[10px] text-zinc-400">virajpotale8873@gmail.com</p>
+                    <p class="text-[10px] text-zinc-400 font-bold uppercase tracking-wider">virajpotale8873@gmail.com</p>
                 </div>
+            </div>
+            <div class="mt-10">
+                <a href="https://drive.google.com/file/d/1k56Nxg1S11yjCpGrt2LvIqB38TE4m7Sx/view?usp=sharing" target="_blank" class="text-[#c5a059] text-[10px] font-bold uppercase tracking-[0.5em] hover:opacity-50 transition">View Full Resume</a>
             </div>
         </div>
     </section>
 
-    <footer class="py-8 text-center opacity-30 text-[8px] uppercase tracking-[1em] italic">
+    <footer class="py-8 text-center opacity-30 text-[8px] uppercase tracking-[1em] italic font-bold">
         Viraj | Cinematickar © 2026 • Directed by Frames
     </footer>
 
