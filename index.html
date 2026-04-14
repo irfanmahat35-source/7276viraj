@@ -7,163 +7,158 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&family=Syne:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Syne:wght@700;800&display=swap');
         
-        :root { --gold: #d4af37; --bg: #050505; }
-        body { background-color: var(--bg); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        :root { --gold: #c5a059; --bg: #080808; }
+        body { background-color: var(--bg); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
 
-        .syne-font { font-family: 'Syne', sans-serif; }
+        .syne-font { font-family: 'Syne', sans-serif; text-transform: uppercase; }
         
-        /* Premium Background Gradient */
-        .bg-mesh {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
-            z-index: -1;
-        }
+        .glass-nav { background: rgba(8, 8, 8, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); }
 
-        /* Creative Video Cards */
-        .video-wrapper {
-            position: relative; border-radius: 20px; overflow: hidden;
-            background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255,255,255,0.08);
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        .video-container {
+            position: relative; border-radius: 8px; overflow: hidden;
+            background: #111; border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
         }
-        .video-wrapper:hover {
-            border-color: var(--gold); transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5), 0 0 20px rgba(212, 175, 55, 0.1);
-        }
+        .video-container:hover { border-color: var(--gold); transform: translateY(-5px); }
 
-        /* Sleek Progress Bars */
-        .bar-container { width: 100%; height: 2px; background: rgba(255,255,255,0.1); margin-top: 10px; overflow: hidden; }
-        .bar-fill { height: 100%; background: var(--gold); position: relative; border-radius: 2px; }
-        .bar-fill::after { content: ''; position: absolute; right: 0; top: 0; height: 100%; width: 20px; background: #fff; filter: blur(4px); }
+        .section-tag { font-size: 9px; letter-spacing: 0.6em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 2rem; display: block; text-align: center; }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 4px; }
-        ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+        /* Progress Bar */
+        .progress-line { height: 1.5px; width: 100%; background: rgba(255,255,255,0.05); position: relative; margin-top: 8px; }
+        .progress-fill { height: 100%; background: var(--gold); position: absolute; left: 0; top: 0; }
+
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-thumb { background: var(--gold); }
     </style>
 </head>
 <body>
 
-    <div class="bg-mesh"></div>
-
-    <nav class="fixed top-0 w-full z-[100] px-8 py-8 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm">
-        <div class="syne-font text-2xl tracking-tighter uppercase font-black">V<span class="text-[#d4af37]">.</span></div>
-        <div class="flex gap-8 text-[9px] uppercase font-bold tracking-[0.4em] opacity-40 hover:opacity-100 transition">
-            <a href="#work" class="hover:text-[#d4af37] transition">Work</a>
-            <a href="#stack" class="hover:text-[#d4af37] transition">Stack</a>
-            <a href="#contact" class="hover:text-[#d4af37] transition">Contact</a>
+    <nav class="fixed top-0 w-full z-[100] px-8 py-5 flex justify-between items-center glass-nav">
+        <div class="syne-font text-xl font-black italic tracking-tighter">VIRAJ<span class="text-[#c5a059]">.</span></div>
+        <div class="hidden md:flex gap-8 text-[9px] uppercase font-bold tracking-widest opacity-50">
+            <a href="#showreel" class="hover:text-[#c5a059] transition">Showreel</a>
+            <a href="#about" class="hover:text-[#c5a059] transition">About</a>
+            <a href="#cinematography" class="hover:text-[#c5a059] transition">Visuals</a>
+            <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
         </div>
     </nav>
 
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-        <div data-aos="fade-up" data-aos-duration="1500">
-            <span class="text-[10px] uppercase tracking-[1em] text-zinc-500 mb-4 block">Visual Storyteller</span>
-            <h1 class="syne-font text-[14vw] md:text-[9vw] leading-[0.85] mb-8">CINEMA<br><span class="text-zinc-800">CRAFTED.</span></h1>
-            <div class="flex gap-10 mt-4">
-                <a href="#work" class="text-[10px] font-bold uppercase tracking-widest bg-white text-black px-10 py-4 rounded-full hover:bg-[#d4af37] transition duration-500">View Work</a>
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6">
+        <div data-aos="fade-up">
+            <h1 class="syne-font text-[10vw] md:text-[6vw] leading-none mb-4 italic">CINEMATICKAR</h1>
+            <p class="text-[10px] md:text-xs tracking-[1.2em] uppercase text-zinc-500 font-bold mb-10">Director • Cinematographer • Editor</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://www.instagram.com/vp__cinematics" target="_blank" class="text-[10px] font-black uppercase tracking-widest border-b border-[#c5a059] pb-1 text-[#c5a059]">Instagram</a>
+                <a href="mailto:virajpotale8873@gmail.com" class="text-[10px] font-black uppercase tracking-widest border-b border-white/20 pb-1">Work with me</a>
             </div>
         </div>
     </section>
 
-    <section id="stack" class="py-32 px-10 bg-white/5 backdrop-blur-3xl border-y border-white/5">
+    <section id="showreel" class="py-20 px-6 border-t border-white/5">
+        <span class="section-tag" data-aos="fade-up">Showreels</span>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+            <div class="video-container aspect-video" data-aos="fade-right">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/rzDYTqzY3FA" allowfullscreen></iframe>
+            </div>
+            <div class="video-container aspect-video" data-aos="fade-left">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/VkQfvbHSTKQ" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="py-20 px-6 bg-zinc-950/20 border-y border-white/5">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-24 items-center">
-                <div data-aos="fade-right">
-                    <h2 class="syne-font text-5xl mb-6 italic">THE STACK<span class="text-[#d4af37]">.</span></h2>
-                    <p class="text-zinc-400 text-sm leading-relaxed mb-10 max-w-md">Using industry-leading tools to transform raw footage into emotional cinematic experiences.</p>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="p-6 bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center group transition hover:border-[#d4af37]/40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 h-10 mb-3 grayscale group-hover:grayscale-0 transition duration-500">
-                            <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">Premiere Pro</span>
-                        </div>
-                        <div class="p-6 bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center group transition hover:border-[#d4af37]/40">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-10 h-10 mb-3 grayscale group-hover:grayscale-0 transition duration-500">
-                            <span class="text-[9px] uppercase font-bold tracking-widest text-zinc-500">After Effects</span>
-                        </div>
+            <span class="section-tag" data-aos="fade-up">Technical Arsenal</span>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-right">
+                    <div class="p-6 bg-white/5 rounded-lg border border-white/5 flex flex-col items-center group transition hover:border-[#c5a059]/40">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 h-10 mb-3 opacity-60 group-hover:opacity-100 transition">
+                        <span class="text-[9px] font-bold uppercase tracking-widest">Premiere Pro</span>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-lg border border-white/5 flex flex-col items-center group transition hover:border-[#c5a059]/40">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-10 h-10 mb-3 opacity-60 group-hover:opacity-100 transition">
+                        <span class="text-[9px] font-bold uppercase tracking-widest">After Effects</span>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-lg border border-white/5 flex flex-col items-center group transition hover:border-[#c5a059]/40">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/DaVinci_Resolve_17_logo.svg/120px-DaVinci_Resolve_17_logo.svg.png" class="w-10 h-10 mb-3 opacity-60 group-hover:opacity-100 transition">
+                        <span class="text-[9px] font-bold uppercase tracking-widest">Resolve</span>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-lg border border-white/5 flex flex-col items-center group transition hover:border-[#c5a059]/40">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="w-10 h-10 mb-3 opacity-60 group-hover:opacity-100 transition">
+                        <span class="text-[9px] font-bold uppercase tracking-widest">Photoshop</span>
                     </div>
                 </div>
 
-                <div class="space-y-12" data-aos="fade-left">
+                <div class="space-y-10" data-aos="fade-left">
                     <div>
-                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest">
-                            <span>Cinematography</span>
-                            <span class="text-[#d4af37]">98%</span>
-                        </div>
-                        <div class="bar-container"><div class="bar-fill" style="width: 98%"></div></div>
+                        <div class="flex justify-between text-[10px] uppercase font-bold tracking-[0.2em]"><span>Cinematography</span><span class="text-[#c5a059]">95%</span></div>
+                        <div class="progress-line"><div class="progress-fill" style="width: 95%"></div></div>
                     </div>
                     <div>
-                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest">
-                            <span>Video Direction</span>
-                            <span class="text-[#d4af37]">92%</span>
-                        </div>
-                        <div class="bar-container"><div class="bar-fill" style="width: 92%"></div></div>
+                        <div class="flex justify-between text-[10px] uppercase font-bold tracking-[0.2em]"><span>Visual Storytelling</span><span class="text-[#c5a059]">92%</span></div>
+                        <div class="progress-line"><div class="progress-fill" style="width: 92%"></div></div>
                     </div>
                     <div>
-                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest">
-                            <span>Color Science</span>
-                            <span class="text-[#d4af37]">85%</span>
-                        </div>
-                        <div class="bar-container"><div class="bar-fill" style="width: 85%"></div></div>
-                    </div>
-                    <div>
-                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest">
-                            <span>Sound Design</span>
-                            <span class="text-[#d4af37]">80%</span>
-                        </div>
-                        <div class="bar-container"><div class="bar-fill" style="width: 80%"></div></div>
+                        <div class="flex justify-between text-[10px] uppercase font-bold tracking-[0.2em]"><span>Color Grading</span><span class="text-[#c5a059]">88%</span></div>
+                        <div class="progress-line"><div class="progress-fill" style="width: 88%"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="work" class="py-32 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
-                <h2 class="syne-font text-7xl italic leading-none" data-aos="fade-up">SELECTED<br><span class="text-zinc-800">WORKS.</span></h2>
-                <p class="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 border-l-2 border-[#d4af37] pl-4">Collection 2024 - 2026</p>
-            </div>
+    <section id="cinematography" class="py-20 px-6">
+        <span class="section-tag" data-aos="fade-up">Visuals & Cinematic Shorts</span>
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div class="video-container aspect-[9/16]" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/XpihFH61sMo" allowfullscreen></iframe></div>
+            <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="50"><iframe class="w-full h-full" src="https://www.youtube.com/embed/HMzNmgyLw0A" allowfullscreen></iframe></div>
+            <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/yhGAK3I3U1g" allowfullscreen></iframe></div>
+            <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="150"><iframe class="w-full h-full" src="https://www.youtube.com/embed/jK3tC-hnrUI" allowfullscreen></iframe></div>
+            <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="200"><iframe class="w-full h-full" src="https://www.youtube.com/embed/frxO8mNM6KY" allowfullscreen></iframe></div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 gap-6">
+            <div class="video-container aspect-video" data-aos="zoom-in"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
+            <div class="video-container aspect-video" data-aos="zoom-in" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="video-wrapper aspect-video" data-aos="fade-up">
-                    <iframe class="w-full h-full opacity-80 hover:opacity-100 transition duration-700" src="https://www.youtube.com/embed/rzDYTqzY3FA" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="video-wrapper aspect-video" data-aos="fade-up" data-aos-delay="200">
-                    <iframe class="w-full h-full opacity-80 hover:opacity-100 transition duration-700" src="https://www.youtube.com/embed/VkQfvbHSTKQ" frameborder="0" allowfullscreen></iframe>
-                </div>
+    <section id="films" class="py-20 px-6 bg-zinc-950/30 border-t border-white/5">
+        <span class="section-tag" data-aos="fade-up">Short Films</span>
+        <div class="max-w-5xl mx-auto space-y-6">
+            <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe></div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="video-container aspect-video" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe></div>
+                <div class="video-container aspect-video" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe></div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-40 px-10 border-t border-white/5 bg-zinc-950/50">
-        <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
-            <h2 class="syne-font text-6xl md:text-8xl mb-12 italic">LET'S TALK<span class="text-[#d4af37]">.</span></h2>
-            <div class="flex flex-col md:flex-row justify-center gap-16 mt-20">
-                <div class="group cursor-pointer">
-                    <p class="text-[9px] uppercase tracking-[0.5em] text-zinc-600 mb-2">Mail</p>
-                    <a href="mailto:virajpotale8873@gmail.com" class="text-xl font-light hover:text-[#d4af37] transition">virajpotale8873@gmail.com</a>
+    <section id="contact" class="py-32 px-10 text-center">
+        <div data-aos="zoom-in">
+            <h2 class="syne-font text-5xl md:text-7xl mb-12 italic">LET'S CONNECT</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 text-center">
+                <div class="p-10 bg-white/5 border border-white/10 rounded-2xl">
+                    <p class="text-[10px] text-zinc-500 uppercase tracking-widest mb-4">Instagram</p>
+                    <a href="https://www.instagram.com/vp__cinematics" target="_blank" class="text-xl font-bold hover:text-[#c5a059]">@vp__cinematics</a>
                 </div>
-                <div class="group cursor-pointer">
-                    <p class="text-[9px] uppercase tracking-[0.5em] text-zinc-600 mb-2">Social</p>
-                    <a href="https://www.instagram.com/vp__cinematics" target="_blank" class="text-xl font-light hover:text-[#d4af37] transition">@vp__cinematics</a>
+                <div class="p-10 bg-white/5 border border-white/10 rounded-2xl">
+                    <p class="text-[10px] text-zinc-500 uppercase tracking-widest mb-4">Direct Mail</p>
+                    <a href="mailto:virajpotale8873@gmail.com" class="text-xl font-bold hover:text-[#c5a059]">virajpotale8873@gmail.com</a>
                 </div>
             </div>
+            <p class="mt-16 text-lg font-bold italic">+91 7276108873</p>
         </div>
     </section>
 
-    <footer class="py-10 text-center border-t border-white/5">
-        <p class="text-[8px] uppercase tracking-[1.5em] text-zinc-800 font-black">Viraj • Directed by Visions</p>
+    <footer class="py-10 text-center opacity-30 text-[8px] uppercase tracking-[1.5em] font-bold">
+        VIRAJ | 2026 • DIRECTED BY FRAMES
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ 
-            duration: 1000, 
-            once: true,
-            offset: 100,
-            easing: 'ease-out-back'
-        });
+        AOS.init({ duration: 800, once: true });
     </script>
 </body>
 </html>
