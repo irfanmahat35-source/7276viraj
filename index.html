@@ -38,10 +38,10 @@
 <body>
 
     <nav class="fixed top-0 w-full z-[100] px-10 py-6 flex justify-between items-center glass-nav">
-        <div class="syne-font text-xl font-black italic tracking-tighter">VP<span class="text-[#c5a059]">.CINEMATICS</span></div>
+        <div class="syne-font text-xl font-black italic tracking-tighter uppercase">VP<span class="text-[#c5a059]">.CINEMATICS</span></div>
         <div class="hidden md:flex gap-10 text-[9px] uppercase font-bold tracking-[0.3em] opacity-50">
             <a href="#showreel" class="hover:text-[#c5a059] transition">Showreel</a>
-            <a href="#cinematography" class="hover:text-[#c5a059] transition">Works</a>
+            <a href="#cinematography" class="hover:text-[#c5a059] transition">Visuals</a>
             <a href="#motion" class="hover:text-[#c5a059] transition">Motion</a>
             <a href="#films" class="hover:text-[#c5a059] transition">Films</a>
             <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
@@ -97,22 +97,38 @@
     <section id="motion" class="py-24 px-6 border-t border-white/5 bg-zinc-950/20">
         <span class="section-tag" data-aos="fade-up">Motion Graphics</span>
         <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-             <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe></div>
-            <div class="video-container aspect-video my-auto" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe></div>
+            <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe>
+            </div>
+            <div class="video-container aspect-video my-auto" data-aos="fade-left">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
     <section id="films" class="py-24 px-6 border-t border-white/5">
         <span class="section-tag" data-aos="fade-up">Short Films</span>
         <div class="max-w-5xl mx-auto space-y-8">
-            <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe></div>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="video-container aspect-video" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe></div>
-                <div class="video-container aspect-video" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe></div>
+            <div class="video-container aspect-video" data-aos="fade-up">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe>
             </div>
+            
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="video-container aspect-video" data-aos="zoom-in"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
-                <div class="video-container aspect-video" data-aos="zoom-in" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
+                <div class="video-container aspect-video" data-aos="fade-right">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe>
+                </div>
+                <div class="video-container aspect-video" data-aos="fade-left">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="video-container aspect-video" data-aos="zoom-in">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe>
+                </div>
+                <div class="video-container aspect-video" data-aos="zoom-in" data-aos-delay="100">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -147,7 +163,7 @@
 
     <section id="contact" class="py-40 px-10 text-center border-t border-white/5">
         <div data-aos="zoom-in">
-            <h2 class="syne-font text-5xl md:text-8xl mb-12 italic leading-none font-black">LET'S CREATE</h2>
+            <h2 class="syne-font text-6xl md:text-8xl mb-12 italic leading-none font-black">LET'S CREATE</h2>
             <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 mt-16 text-center">
                 <div class="p-12 bg-white/5 border border-white/10 rounded-3xl group hover:border-[#c5a059] transition">
                     <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Inquiries</p>
