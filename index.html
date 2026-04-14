@@ -28,7 +28,7 @@
         .progress-line { height: 1.5px; width: 100%; background: rgba(255,255,255,0.05); position: relative; margin-top: 8px; }
         .progress-fill { height: 100%; background: var(--gold); position: absolute; left: 0; top: 0; }
 
-        .hero-mask { filter: grayscale(100%); transition: 1.2s cubic-bezier(0.23, 1, 0.32, 1); object-fit: cover; }
+        .hero-mask { filter: grayscale(100%); transition: 1.2s ease; object-fit: cover; }
         .hero-mask:hover { filter: grayscale(0%); transform: scale(1.05); }
 
         ::-webkit-scrollbar { width: 3px; }
@@ -42,7 +42,7 @@
         <div class="hidden md:flex gap-10 text-[9px] uppercase font-bold tracking-[0.3em] opacity-50">
             <a href="#showreel" class="hover:text-[#c5a059] transition">Showreel</a>
             <a href="#cinematography" class="hover:text-[#c5a059] transition">Works</a>
-            <a href="#stack" class="hover:text-[#c5a059] transition">Stack</a>
+            <a href="#films" class="hover:text-[#c5a059] transition">Films</a>
             <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
         </div>
     </nav>
@@ -66,10 +66,10 @@
                 </div>
                 <div class="grid grid-cols-2 gap-8 border-y border-white/5 py-10">
                     <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Based In</p><p class="text-sm font-semibold italic">Pune / Indapur</p></div>
-                    <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Exp</p><p class="text-sm font-semibold italic">3+ Years</p></div>
+                    <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Specialization</p><p class="text-sm font-semibold italic">Cinema & Editing</p></div>
                 </div>
                 <div class="flex items-center gap-8">
-                    <a href="#contact" class="px-10 py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[#c5a059] transition duration-500">Start Project</a>
+                    <a href="https://www.instagram.com/vp__cinematics" target="_blank" class="px-10 py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[#c5a059] transition duration-500">Follow Work</a>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
     </section>
 
     <section id="cinematography" class="py-24 px-6">
-        <span class="section-tag" data-aos="fade-up">Cinematography & Visuals</span>
+        <span class="section-tag" data-aos="fade-up">Visual Portfolio</span>
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-4">
             <div class="video-container aspect-[9/16]" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/XpihFH61sMo" allowfullscreen></iframe></div>
             <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="50"><iframe class="w-full h-full" src="https://www.youtube.com/embed/HMzNmgyLw0A" allowfullscreen></iframe></div>
@@ -92,24 +92,37 @@
             <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="150"><iframe class="w-full h-full" src="https://www.youtube.com/embed/jK3tC-hnrUI" allowfullscreen></iframe></div>
             <div class="video-container aspect-[9/16]" data-aos="fade-up" data-aos-delay="200"><iframe class="w-full h-full" src="https://www.youtube.com/embed/frxO8mNM6KY" allowfullscreen></iframe></div>
         </div>
-        <div class="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 gap-6">
-            <div class="video-container aspect-video" data-aos="zoom-in"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
-            <div class="video-container aspect-video" data-aos="zoom-in" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
+    </section>
+
+    <section id="films" class="py-24 px-6 border-t border-white/5 bg-zinc-950/20">
+        <span class="section-tag" data-aos="fade-up">Short Films</span>
+        <div class="max-w-5xl mx-auto space-y-8">
+            <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe></div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="video-container aspect-video" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe></div>
+                <div class="video-container aspect-video" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
+                <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
+            </div>
         </div>
     </section>
 
-    <section id="motion" class="py-24 px-6 bg-zinc-950/20 border-t border-white/5">
-        <span class="section-tag" data-aos="fade-up">Motion Graphics</span>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 items-center">
-             <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe></div>
+    <section id="motion" class="py-24 px-6 border-t border-white/5">
+        <span class="section-tag" data-aos="fade-up">Motion Design</span>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+            <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe></div>
             <div class="video-container aspect-video my-auto" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe></div>
         </div>
     </section>
 
-    <section id="stack" class="py-24 px-10 border-t border-white/5">
+    <section id="stack" class="py-24 px-10 border-t border-white/5 bg-zinc-950/10">
         <div class="max-w-6xl mx-auto">
-            <span class="section-tag" data-aos="fade-up">Software Stack</span>
-            <div class="grid md:grid-cols-2 gap-20 items-center mt-12">
+            <span class="section-tag" data-aos="fade-up">Technical Stack</span>
+            <div class="grid md:grid-cols-2 gap-20 mt-12 items-center">
                 <div class="grid grid-cols-2 gap-4" data-aos="fade-right">
                     <div class="p-8 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center group hover:border-[#c5a059] transition">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 h-10 mb-4 opacity-50 group-hover:opacity-100 transition">
@@ -126,7 +139,7 @@
                         <div class="progress-line"><div class="progress-fill" style="width: 98%"></div></div>
                     </div>
                     <div>
-                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest"><span>Visual Direction</span><span class="text-[#c5a059]">92%</span></div>
+                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest"><span>Post-Production</span><span class="text-[#c5a059]">92%</span></div>
                         <div class="progress-line"><div class="progress-fill" style="width: 92%"></div></div>
                     </div>
                 </div>
@@ -134,27 +147,16 @@
         </div>
     </section>
 
-    <section id="films" class="py-24 px-6 border-t border-white/5 bg-zinc-950/20">
-        <span class="section-tag" data-aos="fade-up">Short Films</span>
-        <div class="max-w-5xl mx-auto space-y-8">
-            <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe></div>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="video-container aspect-video" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe></div>
-                <div class="video-container aspect-video" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe></div>
-            </div>
-        </div>
-    </section>
-
     <section id="contact" class="py-40 px-10 text-center border-t border-white/5">
         <div data-aos="zoom-in">
             <h2 class="syne-font text-6xl md:text-8xl mb-12 italic leading-none font-black">LET'S CREATE</h2>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 mt-16 text-center">
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mt-16 text-center">
                 <div class="p-12 bg-white/5 border border-white/10 rounded-3xl group hover:border-[#c5a059] transition">
                     <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Email</p>
-                    <p class="text-lg font-bold">virajpotale8873@gmail.com</p>
+                    <p class="text-lg font-bold italic">virajpotale8873@gmail.com</p>
                 </div>
                 <div class="p-12 bg-white/5 border border-white/10 rounded-3xl group hover:border-[#c5a059] transition">
-                    <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Call</p>
+                    <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Phone</p>
                     <p class="text-lg font-bold italic">+91 7276108873</p>
                 </div>
             </div>
