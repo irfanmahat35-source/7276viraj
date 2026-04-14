@@ -28,8 +28,8 @@
         .progress-line { height: 1.5px; width: 100%; background: rgba(255,255,255,0.05); position: relative; margin-top: 8px; }
         .progress-fill { height: 100%; background: var(--gold); position: absolute; left: 0; top: 0; }
 
-        .hero-mask { filter: grayscale(100%); transition: 1.2s ease; object-fit: cover; }
-        .hero-mask:hover { filter: grayscale(0%); transform: scale(1.05); }
+        .hero-mask { filter: grayscale(100%); transition: 1s ease; object-fit: cover; }
+        .hero-mask:hover { filter: grayscale(0%); transform: scale(1.03); }
 
         ::-webkit-scrollbar { width: 3px; }
         ::-webkit-scrollbar-thumb { background: var(--gold); }
@@ -42,6 +42,7 @@
         <div class="hidden md:flex gap-10 text-[9px] uppercase font-bold tracking-[0.3em] opacity-50">
             <a href="#showreel" class="hover:text-[#c5a059] transition">Showreel</a>
             <a href="#cinematography" class="hover:text-[#c5a059] transition">Works</a>
+            <a href="#motion" class="hover:text-[#c5a059] transition">Motion</a>
             <a href="#films" class="hover:text-[#c5a059] transition">Films</a>
             <a href="#contact" class="hover:text-[#c5a059] transition">Contact</a>
         </div>
@@ -53,30 +54,29 @@
                 <div class="overflow-hidden rounded-3xl border border-white/10 aspect-[4/5] bg-zinc-900 shadow-2xl">
                     <img src="viraj-1.jpeg" alt="Viraj Potale" class="w-full h-full hero-mask">
                 </div>
-                <div class="absolute -bottom-6 -right-6 bg-[#c5a059] text-black px-8 py-4 rounded-2xl shadow-xl" data-aos="zoom-in" data-aos-delay="500">
+                <div class="absolute -bottom-6 -right-6 bg-[#c5a059] text-black px-8 py-4 rounded-2xl shadow-xl">
                     <p class="text-[9px] font-black uppercase tracking-widest mb-1">Recognition</p>
                     <p class="syne-font text-sm font-bold leading-none">State-Level Award Winner</p>
                 </div>
             </div>
-
             <div class="space-y-10" data-aos="fade-left">
                 <div class="space-y-4">
                     <span class="text-[10px] uppercase tracking-[1em] text-[#c5a059] font-bold italic">Cinematickar</span>
                     <h1 class="syne-font text-[14vw] md:text-[7vw] leading-[0.85] italic font-black">VIRAJ<br><span class="text-zinc-800">POTALE.</span></h1>
                 </div>
                 <div class="grid grid-cols-2 gap-8 border-y border-white/5 py-10">
-                    <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Based In</p><p class="text-sm font-semibold italic">Pune / Indapur</p></div>
-                    <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Specialization</p><p class="text-sm font-semibold italic">Cinema & Editing</p></div>
+                    <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Base</p><p class="text-sm font-semibold italic">Pune / Indapur</p></div>
+                    <div class="space-y-1"><p class="text-[9px] uppercase tracking-widest text-zinc-500 font-bold">Exp</p><p class="text-sm font-semibold italic">3+ Years</p></div>
                 </div>
                 <div class="flex items-center gap-8">
-                    <a href="https://www.instagram.com/vp__cinematics" target="_blank" class="px-10 py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[#c5a059] transition duration-500">Follow Work</a>
+                    <a href="https://www.instagram.com/vp__cinematics" target="_blank" class="px-10 py-4 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full hover:bg-[#c5a059] transition duration-500">View Instagram</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="showreel" class="py-24 px-6 border-t border-white/5 bg-zinc-950/20">
-        <span class="section-tag" data-aos="fade-up">Master Showreels</span>
+        <span class="section-tag" data-aos="fade-up">Official Showreels</span>
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
             <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/rzDYTqzY3FA" allowfullscreen></iframe></div>
             <div class="video-container aspect-video" data-aos="fade-up" data-aos-delay="200"><iframe class="w-full h-full" src="https://www.youtube.com/embed/VkQfvbHSTKQ" allowfullscreen></iframe></div>
@@ -94,28 +94,26 @@
         </div>
     </section>
 
-    <section id="films" class="py-24 px-6 border-t border-white/5 bg-zinc-950/20">
+    <section id="motion" class="py-24 px-6 border-t border-white/5 bg-zinc-950/20">
+        <span class="section-tag" data-aos="fade-up">Motion Graphics</span>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+             <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe></div>
+            <div class="video-container aspect-video my-auto" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe></div>
+        </div>
+    </section>
+
+    <section id="films" class="py-24 px-6 border-t border-white/5">
         <span class="section-tag" data-aos="fade-up">Short Films</span>
         <div class="max-w-5xl mx-auto space-y-8">
             <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/5oMdMxCBZx8" allowfullscreen></iframe></div>
-            
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="video-container aspect-video" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/ff7u5dwzhHw" allowfullscreen></iframe></div>
                 <div class="video-container aspect-video" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/V2OaYiKd0Mk" allowfullscreen></iframe></div>
             </div>
-
             <div class="grid md:grid-cols-2 gap-6">
-                <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
-                <div class="video-container aspect-video" data-aos="fade-up"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
+                <div class="video-container aspect-video" data-aos="zoom-in"><iframe class="w-full h-full" src="https://www.youtube.com/embed/FSZ5FSw07xM" allowfullscreen></iframe></div>
+                <div class="video-container aspect-video" data-aos="zoom-in" data-aos-delay="100"><iframe class="w-full h-full" src="https://www.youtube.com/embed/fDTIs_FtB8E" allowfullscreen></iframe></div>
             </div>
-        </div>
-    </section>
-
-    <section id="motion" class="py-24 px-6 border-t border-white/5">
-        <span class="section-tag" data-aos="fade-up">Motion Design</span>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-            <div class="video-container aspect-[9/16] max-w-[280px] mx-auto" data-aos="fade-right"><iframe class="w-full h-full" src="https://www.youtube.com/embed/xTERhwq6FUc" allowfullscreen></iframe></div>
-            <div class="video-container aspect-video my-auto" data-aos="fade-left"><iframe class="w-full h-full" src="https://www.youtube.com/embed/4UMDfFRkO4Y" allowfullscreen></iframe></div>
         </div>
     </section>
 
@@ -125,11 +123,11 @@
             <div class="grid md:grid-cols-2 gap-20 mt-12 items-center">
                 <div class="grid grid-cols-2 gap-4" data-aos="fade-right">
                     <div class="p-8 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center group hover:border-[#c5a059] transition">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 h-10 mb-4 opacity-50 group-hover:opacity-100 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-10 h-10 mb-4 grayscale group-hover:grayscale-0 transition">
                         <span class="text-[10px] font-bold uppercase tracking-widest">Premiere Pro</span>
                     </div>
                     <div class="p-8 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center group hover:border-[#c5a059] transition">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-10 h-10 mb-4 opacity-50 group-hover:opacity-100 transition">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg" class="w-10 h-10 mb-4 grayscale group-hover:grayscale-0 transition">
                         <span class="text-[10px] font-bold uppercase tracking-widest">After Effects</span>
                     </div>
                 </div>
@@ -139,7 +137,7 @@
                         <div class="progress-line"><div class="progress-fill" style="width: 98%"></div></div>
                     </div>
                     <div>
-                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest"><span>Post-Production</span><span class="text-[#c5a059]">92%</span></div>
+                        <div class="flex justify-between text-[10px] uppercase font-black tracking-widest"><span>Editing</span><span class="text-[#c5a059]">92%</span></div>
                         <div class="progress-line"><div class="progress-fill" style="width: 92%"></div></div>
                     </div>
                 </div>
@@ -149,14 +147,14 @@
 
     <section id="contact" class="py-40 px-10 text-center border-t border-white/5">
         <div data-aos="zoom-in">
-            <h2 class="syne-font text-6xl md:text-8xl mb-12 italic leading-none font-black">LET'S CREATE</h2>
-            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mt-16 text-center">
+            <h2 class="syne-font text-5xl md:text-8xl mb-12 italic leading-none font-black">LET'S CREATE</h2>
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 mt-16 text-center">
                 <div class="p-12 bg-white/5 border border-white/10 rounded-3xl group hover:border-[#c5a059] transition">
-                    <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Email</p>
-                    <p class="text-lg font-bold italic">virajpotale8873@gmail.com</p>
+                    <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Inquiries</p>
+                    <p class="text-lg font-bold">virajpotale8873@gmail.com</p>
                 </div>
                 <div class="p-12 bg-white/5 border border-white/10 rounded-3xl group hover:border-[#c5a059] transition">
-                    <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Phone</p>
+                    <p class="text-[9px] text-zinc-600 uppercase tracking-widest mb-2 font-bold">Contact</p>
                     <p class="text-lg font-bold italic">+91 7276108873</p>
                 </div>
             </div>
